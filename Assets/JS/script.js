@@ -4,7 +4,7 @@ let loginBtn = document.getElementById("Loginbtn")
 document.title = "Log In"
 let counter = 0
 let users = [["admin01","123"],["admin02","234"],["admin03","345"]]
-
+let SignupbtnEl = document.getElementById('Signupbtn')
 
 // loginBtn.addEventListener("click", function(){
 // if(counter >=3){
@@ -54,4 +54,6 @@ function second_page(){
     window.location.replace("list.html")
 }          
 
-
+SignupbtnEl.addEventListener('click', function(){
+    window.location.replace("signup.html")
+})
