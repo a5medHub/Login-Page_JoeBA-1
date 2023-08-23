@@ -7,7 +7,7 @@ let RegiterLoginbtnEl = document.getElementById('RegiterLoginbtn')
 let UserName = RegisterUserEl.value
 let UserPassword
 
-function RegiterSubmitbtnEl(){
+function SubmitbtnEl(){
     if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
         // alert('correct')
         alert(UserName)
