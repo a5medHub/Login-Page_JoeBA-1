@@ -7,22 +7,20 @@ let RegiterLoginbtnEl = document.getElementById('RegiterLoginbtn')
 let UserName = RegisterUserEl
 let UserPassword
 
-function SubmitbtnEl(){
-    if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
-        // alert('correct')
-        console.log(`UserName is : ${UserName.value} password is : ${RegisterPassEl.value}`)
-    }
-}
-
-// RegiterSubmitbtnEl.addEventListener('mouseover', function(){
+// function SubmitbtnEl(){
 //     if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
 //         // alert('correct')
-//         alert(UserName)
-//         console.log(UserName)
-//         UserPassword = RegisterPassEl.value
-//         alert(RegisterPassEl.value , UserName)
+//         console.log(`UserName is : ${UserName.value}
+//     password is : ${RegisterPassEl.value}`)
 //     }
-// })
+// }
+RegiterSubmitbtnEl.addEventListener('click', function(){
+    if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
+        // alert('correct')
+        console.log(`UserName is : ${UserName.value}
+    password is : ${RegisterPassEl.value}`)
+    }
+})
 document.title = "Sign Up"
 LoginbtnEl.addEventListener('click', function(){
     window.location.replace("index.html")
