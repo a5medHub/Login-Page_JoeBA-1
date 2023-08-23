@@ -3,10 +3,13 @@ let RegisterPassEl = document.getElementById('RegisterPass')
 let RegisterVerifyPassEl = document.getElementById('RegisterVerifyPass')
 let RegiterSubmitbtnEl = document.getElementById('RegiterSubmitbtn')
 let RegiterLoginbtnEl = document.getElementById('RegiterLoginbtn')
-
-RegiterSubmitbtnEl.addEventListener('hover', function(){
-    if(RegisterPassEl.value == RegisterVerifyPassEl.value){
-        alert('correct')
+let UserName
+let UserPassword
+RegiterSubmitbtnEl.addEventListener('mouseover', function(){
+    if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
+        // alert('correct')
+        UserName == 
+        UserPassword == RegisterPassEl.value
     }
 })
 document.title = "Sign Up"
