@@ -11,7 +11,7 @@ RegiterSubmitbtnEl.addEventListener('mouseover', function(){
         // alert('correct')
         UserName == RegisterUserEl.value
         UserPassword == RegisterPassEl.value
-        alert(UserName, UserPassword)
+        alert(RegisterPassEl.value , RegisterUserEl.value)
     }
 })
 document.title = "Sign Up"
