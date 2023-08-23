@@ -4,16 +4,13 @@ let RegisterPassEl = document.getElementById('RegisterPass')
 let RegisterVerifyPassEl = document.getElementById('RegisterVerifyPass')
 let RegiterSubmitbtnEl = document.getElementById('RegiterSubmitbtn')
 let RegiterLoginbtnEl = document.getElementById('RegiterLoginbtn')
-let UserName = RegisterUserEl.value
+let UserName = RegisterUserEl
 let UserPassword
 
 function SubmitbtnEl(){
     if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
         // alert('correct')
-        alert(UserName)
-        console.log(UserName)
-        UserPassword = RegisterPassEl.value
-        alert(RegisterPassEl.value , UserName)
+        console.log(`UserName is : ${UserName.value} password is : ${RegisterPassEl.value}`)
     }
 }
 
