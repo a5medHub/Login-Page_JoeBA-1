@@ -1,3 +1,6 @@
+import {BackupUsers,AllUsersData} from "./Assets/JS/users.js"
+
+// const user = new User("1234567890", "<NAME>", "Mexico City");
 let LoginbtnEl = document.getElementById('Loginbtn')
 let RegisterUserEl = document.getElementById('RegisterUser')
 let RegisterPassEl = document.getElementById('RegisterPass')
@@ -24,4 +27,4 @@ RegiterSubmitbtnEl.addEventListener('click', function(){
 document.title = "Sign Up"
 LoginbtnEl.addEventListener('click', function(){
     window.location.replace("index.html")
-})
+}) 
