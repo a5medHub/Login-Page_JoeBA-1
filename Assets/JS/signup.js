@@ -4,14 +4,14 @@ let RegisterPassEl = document.getElementById('RegisterPass')
 let RegisterVerifyPassEl = document.getElementById('RegisterVerifyPass')
 let RegiterSubmitbtnEl = document.getElementById('RegiterSubmitbtn')
 let RegiterLoginbtnEl = document.getElementById('RegiterLoginbtn')
-let UserName
+let UserName = RegisterUserEl.value
 let UserPassword
 RegiterSubmitbtnEl.addEventListener('mouseover', function(){
     if(RegisterPassEl.value == RegisterVerifyPassEl.value && RegisterPassEl.value !=="") {
         // alert('correct')
-        UserName == RegisterUserEl.value
-        UserPassword == RegisterPassEl.value
-        alert(RegisterPassEl.value , RegisterUserEl.value)
+        alert(UserName)
+        UserPassword = RegisterPassEl.value
+        alert(RegisterPassEl.value , UserName)
     }
 })
 document.title = "Sign Up"
