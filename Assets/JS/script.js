@@ -34,6 +34,10 @@ passEl.addEventListener("keypress", function(event){ //add keypress ENTER for Lo
         document.getElementById("Loginbtn").click() // triger the button logIn
     }
 })
+
+// passEl.addEventListener("keypress", function(event){ 
+//         console.log("key pressed", event.key)
+// })
 loginBtn.addEventListener("click", function(){
 
     
