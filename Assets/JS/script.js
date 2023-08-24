@@ -5,6 +5,10 @@ document.title = "Log In"
 let counter = 0
 let users = [["admin01","123"],["admin02","234"],["admin03","345"]]
 let SignupbtnEl = document.getElementById('Signupbtn')
+let parentEl = document.getElementById('parent')
+let childEl = document.createElement('p')
+
+
 
 // loginBtn.addEventListener("click", function(){
 // if(counter >=3){
@@ -54,8 +58,13 @@ loginBtn.addEventListener("click", function(){
             setTimeout(second_page,3000)
         }else{
             counter ++
-            alert(`Incorrect Username or Password 
-            You still have ${3-counter} atttempts`)
+            // alert(`Incorrect Username or Password 
+            // You still have ${3-counter} atttempts`)
+            childEl.innerHTML= `Incorrect Username or Password You still have ${3-counter} atttempts` //<p>hello user</p> same in html
+            childEl.style.color = '#ff0'
+            childEl.style.fontSize = '10px'
+            parentEl.appendChild(childEl)
+            setTimeout(incorrectUser, 2000)
         }
    
     })
@@ -63,7 +72,11 @@ loginBtn.addEventListener("click", function(){
 
 function second_page(){
     window.location.replace("list.html")
-}          
+}     
+function incorrectUser(){
+    parentEl.removeChild(childEl)
+    // childEl.remove()
+}     
 
 SignupbtnEl.addEventListener('click', function(){
     window.location.replace("signup.html")
