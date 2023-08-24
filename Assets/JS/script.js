@@ -76,6 +76,10 @@ function second_page(){
 function incorrectUser(){
     parentEl.removeChild(childEl)
     // childEl.remove()
+    userEl.value = ''  
+    passEl.value = ''
+    userEl.focus()
+    // document.getElementById('User').focus()
 }     
 
 SignupbtnEl.addEventListener('click', function(){
