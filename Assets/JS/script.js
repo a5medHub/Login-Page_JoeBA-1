@@ -28,25 +28,32 @@ let SignupbtnEl = document.getElementById('Signupbtn')
 //     }
     
 // })
-
+passEl.addEventListener("keypress", function(event){ //add keypress ENTER for Login Btn
+    if (event.key === 'Enter'){                     // check if the Enter key of the keybord is pressed
+        event.preventDefault()                      // run function preventDefault
+        document.getElementById("Loginbtn").click() // triger the button logIn
+    }
+})
 loginBtn.addEventListener("click", function(){
 
-    if(counter>=3){
-        alert(`Max limit attempts reached`)
-    }else if(userEl.value == "admin01" && passEl.value == "123"){
-        document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
-        setTimeout(second_page,3000)
-    }else if(userEl.value == "admin02" && passEl.value == "234"){
-        document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
-        setTimeout(second_page,3000)
-    }else if(userEl.value == "admin03" && passEl.value == "345"){
-        document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
-        setTimeout(second_page,3000)
-    }else{
-        counter ++
-        alert(`Incorrect Username or Password 
-        You still have ${3-counter} atttempts`)
-    }
+    
+        if(counter>=3){
+            alert(`Max limit attempts reached`)
+        }else if(userEl.value == "admin01" && passEl.value == "123"){
+            document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
+            setTimeout(second_page,3000)
+        }else if(userEl.value == "admin02" && passEl.value == "234"){
+            document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
+            setTimeout(second_page,3000)
+        }else if(userEl.value == "admin03" && passEl.value == "345"){
+            document.write(`<h1 style="text-align: center; color: red">Welcome ${userEl.value}</h1>`)
+            setTimeout(second_page,3000)
+        }else{
+            counter ++
+            alert(`Incorrect Username or Password 
+            You still have ${3-counter} atttempts`)
+        }
+   
     })
     
 
